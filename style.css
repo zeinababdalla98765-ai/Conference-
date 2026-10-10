@@ -862,3 +862,39 @@ img {
         align-items: flex-start;
     }
 }
+/* ============================================
+   11. تعديلات تسجيل الدخول والخروج
+   ============================================ */
+
+/* شعار أعلى صفحة تسجيل الدخول */
+.login-logo-top {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: var(--white);
+    box-shadow: var(--shadow-sm);
+}
+
+.login-logo-top .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* زر تسجيل الخروج */
+.btn-logout {
+    background: #fee2e2;
+    color: #dc2626 !important;
+    padding: 0.5rem 1.2rem !important;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-logout:hover {
+    background: #dc2626;
+    color: var(--white) !important;
+}
+
+.btn-logout::after {
+    display: none !important;
+}
