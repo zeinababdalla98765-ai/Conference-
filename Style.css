@@ -899,3 +899,51 @@ img {
 .btn-logout::after {
     display: none !important;
 }
+/* ===== إصلاح المساحات الفارغة في الموبايل ===== */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.details-page,
+.details-hero,
+.conferences-page,
+.contact-page {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* إصلاح رسائل التنبيه مع RTL */
+#js-message {
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) translateY(-100px) !important;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* إصلاح للهواتف - إلغاء الحواف الجانبية الزائدة */
+@media (max-width: 768px) {
+  .details-hero,
+  .conferences-page,
+  .contact-page,
+  .login-page {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .details-container {
+    padding: 0 1rem !important;
+    margin-top: 1.5rem !important;
+  }
+
+  .details-hero {
+    border-radius: 0 0 16px 16px;
+  }
+
+  .navbar {
+    padding: 1rem !important;
+  }
+   }
